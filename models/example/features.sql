@@ -1,0 +1,1 @@
+SELECT * , (dayofyear(date)) AS day_of_year FROM {{ ref('filter_columns') }}
