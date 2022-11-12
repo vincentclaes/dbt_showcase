@@ -4,3 +4,4 @@ dbt_showcase:
     dev:
       type: duckdb
       path: 'duckdb/db'
+      schema: datahub
