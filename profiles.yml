@@ -1,7 +1,21 @@
-dbt_showcase:
+duckdb:
   target: dev
   outputs:
     dev:
       type: duckdb
       path: 'duckdb/db'
       schema: datahub
+
+athena:
+  target: dev
+  outputs:
+    dev:
+      type: athena
+      s3_staging_dir: s3://dbt-showcase/athena/staging
+      region_name: eu-west-1
+      schema: datahub
+      # it looks like this is the default 
+      # data catalog provided by an account
+      database: awsdatacatalog
+      aws_profile_name: default
+      workgroup: primary

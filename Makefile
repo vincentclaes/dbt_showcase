@@ -1,3 +1,4 @@
+BUCKET := dbt-showcase
 setup:
 	poetry install
 
@@ -6,3 +7,7 @@ setup-duckdb:
 	unzip duckdb.zip
 	sudo mv duckdb /usr/local/bin/duckdb
 	rm duckdb.zip
+	mkdir -p duckdb
+
+setup-athena:
+	aws s3 cp seeds/ s3://dbt-showcase/seeds/ --recursive
