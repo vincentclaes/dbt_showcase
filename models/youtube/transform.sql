@@ -4,6 +4,6 @@ SELECT MAX(date) as date,
        'week' as time_dimension, 
        'annotation_click_through_rate' as metric_name, 
        AVG(annotation_click_through_rate) as metric_value 
-       FROM datahub.features 
+       FROM {{ ref('features') }}
        WHERE day_of_year > 8 - 7 
        GROUP BY channel_id,video_id

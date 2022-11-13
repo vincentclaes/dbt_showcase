@@ -19,3 +19,42 @@ athena:
       database: awsdatacatalog
       aws_profile_name: default
       workgroup: primary
+
+redshift:
+  target: dev
+  outputs:
+    dev:
+      type: redshift
+      host: dbtredshiftcluster-yuchusvbeu93.cfjalqgddcee.us-east-1.redshift.amazonaws.com
+      user: dbtadmin
+      password: Dbtadmin108!
+      port: 5439
+      dbname: dbtworkshop
+      schema: datahub
+      threads: 4
+      keepalives_idle: 240 # default 240 seconds
+      connect_timeout: 10 # default 10 seconds
+      # search_path: public # optional, not recommended
+      # sslmode: [optional, set the sslmode used to connect to the database (in case this parameter is set, will look for ca in ~/.postgresql/root.crt)]
+      # ra3_node: true # enables cross-database sources
+
+
+redshift-serverless:
+  target: dev
+  outputs:
+    dev:
+      type: redshift
+      host: default.077590795309.us-east-1.redshift-serverless.amazonaws.com
+      user: dbtadmin
+      password: Dbtadmin108!
+      port: 5439
+      database: dbtworkshop
+      schema: datahub
+      threads: 4
+      keepalives_idle: 240 # default 240 seconds
+      connect_timeout: 10 # default 10 seconds
+      # search_path: public # optional, not recommended
+      # sslmode: None
+      # ra3_node: true # enables cross-database sources
+
+
