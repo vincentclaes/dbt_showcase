@@ -122,19 +122,6 @@ dbt test --profile duckdb --select youtube
 - Test utils: https://hub.getdbt.com/dbt-labs/dbt_utils/latest/
 - Integration with great-expectations: https://hub.getdbt.com/calogica/dbt_expectations/latest/
 
-### Cost
-
-- 100 users
-- job takes 1 minute
-
-__Glue Python Shell__
-
-For running dbt on duckdb we take a glue python shell
-with a 1 DPU (4 cpu - 16 GB RAM - 50 GB Disk)
-
-- Daily charges - 0.82$
-- Monthly charges - 24.6$
-
 ### Compile DBT Models
 
 ```
@@ -147,6 +134,19 @@ check output in [target/compiled/dbt_showcase/models/youtube](./target/compiled/
 dbt docs generate --profile duckdb --select youtube
 dbt docs serve --profile duckdb
 ```
+
+### Cost
+
+- 100 users
+- job takes 1 minute
+
+__Glue Python Shell__
+
+For running dbt on duckdb we take a glue python shell
+with a 1 DPU (4 cpu - 16 GB RAM - 50 GB Disk)
+
+- Daily charges - 0.82$
+- Monthly charges - 24.6$
  ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
