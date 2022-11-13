@@ -1,4 +1,4 @@
-date,channel_id,video_id,estimated_partner_revenue,estimated_partner_ad_revenue,estimated_cpm,estimated_playback_based_cpm
+ingestion_date,channel_id,video_id,estimated_partner_revenue,estimated_partner_ad_revenue,estimated_cpm,estimated_playback_based_cpm
 2022-01-01,channel_id_1,video_id_1,10,1,10,1
 2022-01-02,channel_id_1,video_id_1,20,2,20,2
 2022-01-03,channel_id_1,video_id_1,30,3,30,3

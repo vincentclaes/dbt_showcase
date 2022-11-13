@@ -1,4 +1,4 @@
-date,channel_id,video_id,annotation_click_through_rate,card_click_rate,average_view_duration_seconds,views,red_views,subscribers_gained,subscribers_lost,likes,dislikes,comments
+ingestion_date,channel_id,video_id,annotation_click_through_rate,card_click_rate,average_view_duration_seconds,views,red_views,subscribers_gained,subscribers_lost,likes,dislikes,comments
 2022-01-01,channel_id_1,video_id_1,0.01,0.01,10,1000,100,10,1,10,1,10
 2022-01-02,channel_id_1,video_id_1,0.02,0.02,20,2000,200,20,2,20,2,20
 2022-01-03,channel_id_1,video_id_1,0.03,0.03,30,3000,300,30,3,30,3,30
