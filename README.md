@@ -142,7 +142,11 @@ dbt compile --profile duckdb --select youtube
 ```
 check output in [target/compiled/dbt_showcase/models/youtube](./target/compiled/dbt_showcase/models/youtube)
 
-
+### Documentation
+```bash
+dbt docs generate --profile duckdb --select youtube
+dbt docs serve --profile duckdb
+```
  ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
