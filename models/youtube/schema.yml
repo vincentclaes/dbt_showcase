@@ -7,7 +7,7 @@ models:
     - name: metric_value
       tests:
       - not_null
-      # - unique
+      # - unique 
     - name: time_dimension
       tests:
         - accepted_values:
